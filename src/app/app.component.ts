@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Loan_App';
+  constructor(private route: Router) {}
+  title = 'Assig5';
+  message = 'from parent!';
+
+  
+
 }
